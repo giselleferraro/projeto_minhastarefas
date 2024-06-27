@@ -60,7 +60,7 @@ const tarefasSlice = createSlice({
     },
     alteraStatus: (
       state,
-      action: PayloadAction<{ id: Number; finalizado: boolean }>
+      action: PayloadAction<{ id: number; finalizado: boolean }>
     ) => {
       const indexDaTarefa = state.itens.findIndex(
         (t) => t.id === action.payload.id
